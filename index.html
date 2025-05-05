@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cidades Turísticas do Nordeste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Cidades Turísticas do Nordeste</h1>
+    <p>Conheça os destinos mais encantadores do Brasil</p>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <!-- Cidades turísticas -->
+      <div class="cidade" onclick="mostrarDetalhes('salvador')">
+        <img src="img/salvador.jpg" alt="Salvador">
+        <h2>Salvador (BA)</h2>
+      </div>
+
+      <div class="cidade" onclick="mostrarDetalhes('fortaleza')">
+        <img src="img/fortaleza.jpg" alt="Fortaleza">
+        <h2>Fortaleza (CE)</h2>
+      </div>
+
+      <div class="cidade" onclick="mostrarDetalhes('recife')">
+        <img src="img/recife.jpg" alt="Recife">
+        <h2>Recife (PE)</h2>
+      </div>
+
+      <div class="cidade" onclick="mostrarDetalhes('jericoacoara')">
+        <img src="img/jericoacoara.jpg" alt="Jericoacoara">
+        <h2>Jericoacoara (CE)</h2>
+      </div>
+    </section>
+
+    <section id="detalhes" class="detalhes">
+      <h3>Detalhes da cidade</h3>
+      <p id="descricao"></p>
+    </section>
+
+    <section class="contato">
+      <h2>Fale Conosco</h2>
+      <form onsubmit="enviarMensagem(event)">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Turismo Nordeste</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
